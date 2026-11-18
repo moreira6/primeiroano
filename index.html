@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#5c55d6" />
+    <meta name="description" content="Pequenos Guardiões do Respeito: jogos educativos sobre diversidade, cultura afro-brasileira, amizade e respeito." />
+    <title>Pequenos Guardiões do Respeito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Página inicial">
+          <span class="brand-mark">🌈</span>
+          <span>Pequenos <b>Guardiões</b></span>
+        </a>
+        <div class="top-actions">
+          <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="true">🔊 Sons ligados</button>
+        </div>
+      </header>
+      <main id="main" class="main-shell">
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">UMA AVENTURA DE RESPEITO E AMIZADE</span>
+            <h1>Pequenos Guardiões <span>do Respeito!</span></h1>
+            <p>Vamos aprender que cada pessoa é especial e que nossas diferenças merecem respeito.</p>
+            <div class="hero-buttons">
+              <button class="primary-btn" id="startBtn" type="button">Começar aventura <span>→</span></button>
+              <button class="soft-btn" id="howBtn" type="button">Como jogar?</button>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Ilustração de crianças diversas">
+            <div class="sun"></div>
+            <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+            <div class="rainbow">🌈</div>
+            <div class="kids">
+              <span class="kid kid-one">👧🏽</span><span class="kid kid-two">👦🏿</span><span class="kid kid-three">👧🏻</span>
+            </div>
+            <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✧</div>
+            <div class="art-caption">Juntos somos melhores! 💜</div>
+          </div>
+        </section>
+
+        <section class="welcome-strip">
+          <div class="strip-icon">⭐</div>
+          <div><b>Uma missão muito importante!</b><span>Conhecer, brincar, aprender e tratar todas as pessoas com carinho e respeito.</span></div>
+        </section>
+
+        <section class="map-section" id="mapSection">
+          <div class="section-heading">
+            <div><span class="eyebrow">SEU CAMINHO</span><h2>Mapa da aventura</h2></div>
+            <div class="progress-mini"><span id="progressText">0 de 5 fases</span><div class="progress-track"><i id="progressBar"></i></div></div>
+          </div>
+          <div class="phase-grid" id="phaseGrid"></div>
+        </section>
+
+        <section class="teacher-note">
+          <span>🍎</span><div><b>Uma dica para quem está ensinando</b><p>Leia as instruções com a turma, incentive a conversa e ajude as crianças quando necessário. O objetivo é aprender juntos!</p></div>
+        </section>
+      </main>
+      <footer>Feito para aprender brincando • 1º ano do Ensino Fundamental</footer>
+    </div>
+    <div id="modalRoot"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
